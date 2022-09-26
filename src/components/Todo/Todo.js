@@ -1,11 +1,14 @@
 import React from 'react';
 
 const Todo = (props) => {
-    return (
+   
+    const {id, title, completed} = props.todo;
+    
+        return (
         <div>
-            <h3>{props.id}</h3>
-            <p>{props.title}</p>
-            <p>{props.completed}</p>
+            <h3>{id}</h3>
+            <p>{title}</p>
+            <p>{completed}</p>
         </div>
     );
 };
